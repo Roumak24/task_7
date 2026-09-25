@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================= BODY ================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #526270;
+    overflow-x: hidden;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    width: 100%;
+    height: 12vh;
+
+    padding: 0 6vw;
+
+    white-space: nowrap;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: inline-block;
+
+    width: 27%;
+
+    vertical-align: middle;
+
+    padding-top: 4vh;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    color: #526270;
+}
+
+
+/* NAVIGATION LINKS */
+
+.nav-links {
+    display: inline-block;
+
+    width: 45%;
+
+    text-align: center;
+    vertical-align: middle;
+
+    padding-top: 4vh;
+}
+
+.nav-links a {
+    text-decoration: none;
+
+    color: #71808c;
+
+    font-size: 14px;
+
+    margin: 0 1vw;
+}
+
+.nav-links a:hover {
+    color: #0da9f5;
+}
+
+
+/* USERNAME */
+
+.username {
+    display: inline-block;
+
+    width: 14%;
+
+    text-align: center;
+    vertical-align: middle;
+
+    padding: 1.5vh 0;
+
+    background-color: #e8f6fd;
+
+    color: #0da9f5;
+
+    border-radius: 12px;
+
+    font-size: 12px;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    width: 100%;
+
+    height: 88vh;
+
+    padding: 10vh 7vw 5vh;
+
+    white-space: nowrap;
+}
+
+
+/* LEFT SIDE */
+
+.hero-left {
+    display: inline-block;
+
+    width: 52%;
+
+    vertical-align: middle;
+
+    white-space: normal;
+}
+
+.hero-left h1 {
+    font-size: 3.2vw;
+
+    line-height: 1.25;
+
+    color: #526270;
+
+    margin-bottom: 2vh;
+}
+
+.hero-left h1 span {
+    color: #0da9f5;
+}
+
+
+.hero-left p {
+    width: 85%;
+
+    font-size: 1.3vw;
+
+    line-height: 1.5;
+
+    color: #a8b3bc;
+
+    margin-bottom: 4vh;
+}
+
+
+/* BUTTON */
+
+.hero-left button {
+    border: none;
+
+    background-color: #19aaf2;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    padding: 2.2vh 4vw;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+}
+
+.hero-left button:hover {
+    background-color: #0798dc;
+}
+
+
+/* RIGHT SIDE */
+
+.hero-right {
+    display: inline-block;
+
+    width: 46%;
+
+    text-align: center;
+
+    vertical-align: middle;
+}
+
+.hero-right img {
+    width: 85%;
+
+    max-height: 60vh;
+
+    object-fit: contain;
+}
+
+
+/* ================================================= */
+/* ================= TABLET ======================== */
+/* ================================================= */
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    .navbar {
+        height: 12vh;
+
+        padding: 0 5vw;
+    }
+
+    .logo {
+        width: 27%;
+
+        font-size: 21px;
+    }
+
+    .nav-links {
+        width: 48%;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+
+        margin: 0 0.7vw;
+    }
+
+    .username {
+        width: 15%;
+
+        font-size: 12px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        height: 88vh;
+
+        padding: 7vh 5vw 4vh;
+    }
+
+    .hero-left {
+        width: 52%;
+    }
+
+    .hero-left h1 {
+        font-size: 4vw;
+
+        line-height: 1.25;
+    }
+
+    .hero-left p {
+        width: 90%;
+
+        font-size: 1.8vw;
+
+        line-height: 1.45;
+    }
+
+    .hero-left button {
+        font-size: 14px;
+
+        padding: 2vh 4vw;
+    }
+
+    .hero-right {
+        width: 46%;
+    }
+
+    .hero-right img {
+        width: 100%;
+
+        max-height: 55vh;
+    }
+}
+
+
+/* ================================================= */
+/* ================= MOBILE ======================== */
+/* ================================================= */
+
+@media screen and (max-width: 600px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        height: 14vh;
+
+        padding: 0 7vw;
+    }
+
+
+    /* LOGO */
+
+    .logo {
+        width: 55%;
+
+        padding-top: 4vh;
+
+        font-size: 27px;
+    }
+
+
+    /* HIDE NAVIGATION LINKS */
+
+    .nav-links {
+        display: none;
+    }
+
+
+    /* USERNAME */
+
+    .username {
+        width: 42%;
+
+        padding: 1.7vh 0;
+
+        font-size: 13px;
+
+        border-radius: 13px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        height: auto;
+
+        padding: 6vh 7vw 0;
+
+        white-space: normal;
+    }
+
+
+    /* LEFT */
+
+    .hero-left {
+        display: block;
+
+        width: 100%;
+    }
+
+
+    .hero-left h1 {
+        font-size: 8vw;
+
+        line-height: 1.18;
+
+        margin-bottom: 2vh;
+    }
+
+
+    .hero-left p {
+        width: 100%;
+
+        font-size: 4vw;
+
+        line-height: 1.4;
+
+        margin-bottom: 3vh;
+    }
+
+
+    /* BUTTON */
+
+    .hero-left button {
+        width: 75%;
+
+        padding: 2.5vh 2vw;
+
+        font-size: 16px;
+
+        border-radius: 18px;
+    }
+
+
+    /* IMAGE */
+
+    .hero-right {
+        display: block;
+
+        width: 100%;
+
+        margin-top: 5vh;
+    }
+
+
+    .hero-right img {
+        width: 90%;
+
+        max-height: none;
+    }
+}
